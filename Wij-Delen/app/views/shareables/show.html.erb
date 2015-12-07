@@ -1,0 +1,16 @@
+<h3>Dit product is klaar om uit te lenen</h3>
+<div class="jumbotron">
+	<p>
+		<strong>Title:</strong>
+		<%= @shareable.title %>
+	</p>
+	 
+	<p>
+		<strong>Description:</strong>
+		<%= @shareable.text %>
+	</p>
+
+<%= link_to "Terug", shareables_path, :class=> "btn btn-primary" %>
+<%= link_to "Aanpassen", edit_shareable_path, :class=> "btn btn-primary" %>
+<%=	link_to "Verwijderen", shareable_path, :class=> "btn btn-primary", method: :delete, data: { confirm: "Weet je het zeker?"} %>
+</div>

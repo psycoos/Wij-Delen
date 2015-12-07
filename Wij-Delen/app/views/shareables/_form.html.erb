@@ -1,0 +1,11 @@
+<%= simple_form_for @shareable, html: { multipart: true } do |f| %>
+<div class="jumbotron">
+  <div class="form-group">
+    <%= f.input :title, label:"Product", placeholder:'Naam van je product', input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :text, label:"Omschijving", placeholder:'Omschrijving van je product', input_html: { class: 'form-control'} %>
+  </div>
+  <%= f.button :submit, "Toevoegen", class: 'btn btn-primary' %>
+<% end %>
+</div>
