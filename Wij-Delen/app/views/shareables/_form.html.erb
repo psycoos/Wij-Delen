@@ -6,6 +6,9 @@
   <div class="form-group">
     <%= f.input :text, label:"Omschijving", placeholder:'Omschrijving van je product', input_html: { class: 'form-control'} %>
   </div>
+  <div class="form-group">
+    <%= f.file_field :image %>
+  </div>
   <%= f.button :submit, "Toevoegen", class: 'btn btn-primary' %>
 <% end %>
 </div>

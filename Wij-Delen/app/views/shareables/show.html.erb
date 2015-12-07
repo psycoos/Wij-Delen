@@ -10,6 +10,11 @@
 		<%= @shareable.text %>
 	</p>
 
+	<p>
+		<%= image_tag @shareable.image.url(:medium)%>
+	</p>
+
+
 <%= link_to "Terug", shareables_path, :class=> "btn btn-primary" %>
 <%= link_to "Aanpassen", edit_shareable_path, :class=> "btn btn-primary" %>
 <%=	link_to "Verwijderen", shareable_path, :class=> "btn btn-primary", method: :delete, data: { confirm: "Weet je het zeker?"} %>

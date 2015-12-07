@@ -43,7 +43,7 @@ class ShareablesController < ApplicationController
 	private
 
 	def shareable_params
-		params.require(:shareable).permit(:title, :text)
+		params.require(:shareable).permit(:title, :text, :image)
 	end
 
 	def find_shareable

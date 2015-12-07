@@ -9,6 +9,9 @@
       	<th><%= link_to shareable.title, shareable %></th>
       	<th><%= link_to shareable.text, shareable %></th>
       </div>
+      <div>
+        <th><%= link_to (image_tag shareable.image.url(:small)), shareable %></th>
+      </div>
     </div>
   <% end %>
 </div>
