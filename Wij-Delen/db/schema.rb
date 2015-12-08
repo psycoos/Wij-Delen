@@ -11,6 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/users
 ActiveRecord::Schema.define(version: 20151208100245) do
 
   create_table "users", force: :cascade do |t|
@@ -45,4 +49,8 @@ ActiveRecord::Schema.define(version: 20151207203352) do
     t.datetime "image_updated_at"
   end
 
+<<<<<<< HEAD
+=======
+>>>>>>> shareables
+>>>>>>> origin/users
 end
