@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
+<<<<<<< HEAD
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'mail_form'
+=======
+>>>>>>> origin/navbar
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'rails', '4.2.4'
