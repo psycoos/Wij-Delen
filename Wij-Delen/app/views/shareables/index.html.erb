@@ -1,0 +1,20 @@
+<div class="row">
+  <% @shareables.each do |shareable| %>
+  <div class="col-md-6 col-md-offset-3">
+    <div>
+      <h1> Lijst met shareables </h1>
+      <%= link_to 'Advertentie plaatsen', new_shareable_path %>
+    </div>
+    <div>
+      <th><%= link_to shareable.title, shareable %></th>
+      <th><%= link_to shareable.text, shareable %></th>
+    </div>
+    <div>
+      <th><%= link_to (image_tag shareable.image.url(:small)), shareable %></th>
+    </div>
+    <div>
+      <%= link_to "Terug", shareables_path %>
+    </div>
+  </div>
+  <% end -%>
+</div>
