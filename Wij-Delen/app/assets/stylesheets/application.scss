@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+footer {
+background-color:#f4f4f4;
+padding:15px;
+}
+
+.copyright {
+background-color:#111111;
+height:50px;
+line-height: 50px;
+color:#ffffff;
+font-size:11px;
+padding-left:15px;
+}
