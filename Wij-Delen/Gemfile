@@ -1,11 +1,8 @@
 source 'https://rubygems.org'
 
-<<<<<<< HEAD
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'mail_form'
-=======
 gem 'bootstrap-sass', '~> 3.3.6'
->>>>>>> origin/footer
 
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
@@ -36,9 +33,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'simple_form', '~> 3.2'
 # Gem voor een form
-
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-# Bootstrap styling
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
