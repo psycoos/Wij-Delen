@@ -31,4 +31,18 @@ ActiveRecord::Schema.define(version: 20151208100245) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
+ActiveRecord::Schema.define(version: 20151207203352) do
+
+  create_table "shareables", force: :cascade do |t|
+    t.string   "title"
+    t.text     "text"
+    t.binary   "image"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
 end
